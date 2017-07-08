@@ -32,5 +32,21 @@
             <!-- Sorts the values in descending order -->
             Reverse Sort: <?php rsort($numbers); print_r($numbers) ?>
         </pre>
+        <!-- Concatenate elements of an array into a single string -->
+        <p>
+            Implode: <?php echo $num_string = implode(" * ", $numbers); ?>
+        </p>
+        <!-- Convert a string into an array -->
+        <p>
+            Explode: <?php print_r(explode(" * ", $num_string)); ?>
+        </p>
+
+        <!-- Testing for values in an array -->
+        <p>
+            15 in array?: <?php echo in_array(15, $numbers); // returns T/F ?>
+        </p>
+        <p>
+            19 in array?: <?php echo in_array(19, $numbers); // returns T/F ?>
+        </p>
     </body>
 </html>
